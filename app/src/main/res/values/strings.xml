@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Credse admin</string>
+
+    <string name="mobile_no_must_10_digits">Mobile no must 10 digits</string>
+    <string name="aadhar_verification">Aadhar verification</string>
+    <string name="enter_aadhar_number">Enter Aadhar Number</string>
+    <string name="enter_yours_customer_s_12_digit_aadhar_number_and_click_on_send_otp_to_recive_otp_on_customer_s_aadhar_registered_mobile_number">Enter yours customer\'s 12 digit Aadhar number and Click on Send OTP to recive OTP on Customer\'s Aadhar Registered Mobile Number.</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="enter_aadhar_no">Enter Aadhar No</string>
+    <string name="enter_12_digits_aadhar_no">Enter 12 digits aadhar no</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="enter_the_otp_received_on_customer_s_aadhar_registered_mobile_number_and_click_on_submit_button_to_validate_customer_s_identity_as_per_aadhar_database">Enter the OTP received on Customer \'s Aadhar registered mobile Number and click on SUBMIT button to validate customer\'s identity as per Aadhar Database</string>
+    <string name="submit">Submit</string>
+    <string name="re_send_otp_in_10_seconds">Re-send OTP in 30 seconds</string>
+    <string name="enter_4_digits_aadhar_otp">Enter 6 digits aadhar OTP</string>
+</resources>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#F8F7ED"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.aadhar.AadharVerifiedListActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verified aadhar list"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"/>
+
+    </RelativeLayout>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="52dp"
+        tools:ignore="MissingConstraints"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--add  several shimmer placeholder layout -->
+            <include layout="@layout/m_fragment_home_shimmer" />
+            <include layout="@layout/m_fragment_home_shimmer" />
+            <include layout="@layout/m_fragment_home_shimmer" />
+            <include layout="@layout/m_fragment_home_shimmer" />
+            <include layout="@layout/m_fragment_home_shimmer" />
+            <include layout="@layout/m_fragment_home_shimmer" />
+            <include layout="@layout/m_fragment_home_shimmer" />
+            <include layout="@layout/m_fragment_home_shimmer" />
+            <include layout="@layout/m_fragment_home_shimmer" />
+            <include layout="@layout/m_fragment_home_shimmer" />
+            <include layout="@layout/m_fragment_home_shimmer" />
+            <include layout="@layout/m_fragment_home_shimmer" />
+            <include layout="@layout/m_fragment_home_shimmer" />
+            <include layout="@layout/m_fragment_home_shimmer" />
+            <include layout="@layout/m_fragment_home_shimmer" />
+            <include layout="@layout/m_fragment_home_shimmer" />
+            <include layout="@layout/m_fragment_home_shimmer" />
+            <include layout="@layout/m_fragment_home_shimmer" />
+            <include layout="@layout/m_fragment_home_shimmer" />
+            <include layout="@layout/m_fragment_home_shimmer" />
+            <include layout="@layout/m_fragment_home_shimmer" />
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="52dp"
+
+        android:visibility="visible">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:scrollbars="none" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/no_records"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="52dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_records"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="No records found."
+                android:gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/new2"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_black"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="15dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_add"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="15sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="0dp"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
